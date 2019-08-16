@@ -1,0 +1,46 @@
+{
+    "Owner": [
+        {
+            "id": "0d692339-6dc7-4cd0-8ad5-2af65d5cb6a7",
+            "name": "Iron Man",
+            "address": "10880 Malibu Point",
+            "phone": "+1-202-555-0126",
+            "email": "t.stark@avengers.com"
+        },
+        {
+            "id": "1cc87605-a837-4801-ac99-f1c4b609fc10",
+            "name": "Captain America",
+            "address": "569 Leaman Place, Brooklyn Heights",
+            "phone": "+1-202-555-0164",
+            "email": "c.america@avengers.com"
+        },
+        {
+            "id": "e7a2dfa2-8532-40e8-9211-71f952736d42",
+            "name": "Spider Man",
+            "address": "20 Ingram Street, Forest Hills, NY",
+            "phone": "+1-202-555-0169",
+            "email": "spiderman@avengers.com"
+        },
+        {
+            "id": "e7a2dfa2-8532-40e8-9211-71f952736d45",
+            "name": "Thor",
+            "address": "Asgard",
+            "phone": "+1-202-555-0161",
+            "email": "thor@avengers.com"
+        },
+        {
+            "id": "e7a2dfa2-8532-40e8-9211-71f952736d49",
+            "name": "Black Widow",
+            "address": "Stalingrad",
+            "phone": "+1-202-555-0178",
+            "email": "black.widow@avengers.com"
+        },
+        {
+            "id": "e7a2dfa2-8532-40e8-9211-71f952736d43",
+            "name": "Hulk",
+            "address": "Dayton, Ohio",
+            "phone": "+1-202-555-0165",
+            "email": "hulk@avengers.com"
+        }
+    ]
+}
