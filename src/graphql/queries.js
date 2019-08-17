@@ -1,6 +1,7 @@
-import { GraphQLList, GraphQLObjectType } from "graphql";
-import { OwnerType } from "./types";
-import data from "../../data/owner.json";
+import { GraphQLList, GraphQLObjectType, GraphQLInt, GraphQLNonNull } from "graphql";
+import { OwnerType, PetType } from "./types";
+import data from "../../data/data.json";
+import _ from "lodash";
 
 const OnwerQueryType = new GraphQLObjectType({
     name: 'OnwerQueryType',
@@ -9,6 +10,19 @@ const OnwerQueryType = new GraphQLObjectType({
         owners: {
             type: new GraphQLList(OwnerType),
             resolve: () => data.Owner
+        },
+        pets: {
+            type: new GraphQLList(PetType),
+            resolve: () => data.Pets
+        },
+        owner: {
+            type: OwnerType,
+            args: {
+                id: { type: GraphQLInt }
+            },
+            resolve: function (source, args) {
+                return _.find(data.Owner, { id: args.id });
+            }
         }
     }
 });
