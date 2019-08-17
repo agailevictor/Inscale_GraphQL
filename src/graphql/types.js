@@ -2,7 +2,7 @@ import { GraphQLString, GraphQLInt, GraphQLNonNull, GraphQLObjectType, GraphQLIn
 
 export const OwnerType = new GraphQLObjectType({
     name: 'OwnerType',
-    description: 'Owner list',
+    description: 'Owner Type',
     fields: {
         id: { type: GraphQLInt },
         name: { type: GraphQLString },
@@ -14,9 +14,22 @@ export const OwnerType = new GraphQLObjectType({
 
 export const PetType = new GraphQLObjectType({
     name: 'PetType',
-    description: 'Pet list',
+    description: 'Pet Type',
     fields: {
-        id: { type: GraphQLInt },
+        id: { type: GraphQLString },
+        name: { type: GraphQLString },
+        colour: { type: GraphQLString },
+        age: { type: GraphQLInt },
+        breed: { type: GraphQLString },
+        ownerid: { type: GraphQLInt }
+    }
+});
+
+export const PetCreateType = new GraphQLInputObjectType({
+    name: 'PetCreateType',
+    description: 'Add a Pet to the list',
+    type: PetType,
+    fields: {
         name: { type: GraphQLString },
         colour: { type: GraphQLString },
         age: { type: GraphQLInt },
