@@ -37,3 +37,16 @@ export const PetCreateType = new GraphQLInputObjectType({
         ownerid: { type: GraphQLInt }
     }
 });
+
+export const PetUpdateType = new GraphQLInputObjectType({
+    name: 'PetUpdateType',
+    description: 'Pet Update Type',
+    fields: {
+        id: { type: GraphQLString },
+        name: { type: GraphQLString },
+        colour: { type: GraphQLString },
+        age: { type: GraphQLInt },
+        breed: { type: GraphQLString },
+        ownerid: { type: GraphQLInt }
+    }
+});
