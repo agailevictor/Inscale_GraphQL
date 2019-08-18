@@ -70,8 +70,6 @@ export const OwnerPetType = new GraphQLObjectType({
             resolve(source, args) {
                 return _.filter(data.Pets, { ownerid: source.id });
             }
-
         }
-
     }
 });

@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  service-api:
+    image: service-api
+    container_name: service-api
+    build:
+      context: ./api
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    volumes:
+      - ./api/src/:/usr/app/api/src/
+      
