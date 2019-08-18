@@ -14,7 +14,7 @@ The candidate will create a microservice to serve an API
 - The API can be implemented using either REST or GraphQL. GraphQL is preferred, but REST will be acceptable.
 
 ## Domain Model
-add image(optional)
+![Domain](https://user-images.githubusercontent.com/10876540/63225012-a83dff00-c1fe-11e9-939e-54b9ec3a1ffc.PNG)
 
 ## Data
 - No database is required, data for these entities can be stored as JSON in the file system.
