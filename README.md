@@ -30,7 +30,7 @@ The candidate will create a microservice to serve an API
 
 ## Tech/framework used
 <b>Built with</b>
-- [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/), [Express](https://expressjs.com/)
 - [GraphQL](https://graphql.org/)
 - [docker](https://www.docker.com/)
 
