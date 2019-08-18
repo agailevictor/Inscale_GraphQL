@@ -27,3 +27,28 @@ add image(optional)
 
 ## Deployment
 - The solution should be deployable using Docker. Build process/script should follow best practices and create a Docker image
+
+## Tech/framework used
+<b>Built with</b>
+- [Node.js](https://nodejs.org/en/)
+- [GraphQL](https://graphql.org/)
+- [docker](https://www.docker.com/)
+
+## How to use?
+Before proceeding make sure you have installed docker and docker-compose.
+- To install docker and docker-compose, [Docker Compose](https://docs.docker.com/compose/)
+- Clone the repository and then follow the commands.
+```
+$ cd %repo%
+$ docker-compose up
+```
+- This will build and run the node.js container.
+- Navigate to http://localhost:3000 in a web browser to see your newly installed application.
+- You can also use the following command to further explore the resulting configuration.
+```
+$ docker ps
+```
+- To stop and remove the containers.
+```
+$ docker-compose down
+```
