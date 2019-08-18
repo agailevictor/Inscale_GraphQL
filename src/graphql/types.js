@@ -1,4 +1,6 @@
-import { GraphQLString, GraphQLInt, GraphQLNonNull, GraphQLObjectType, GraphQLInputObjectType } from "graphql";
+import { GraphQLString, GraphQLInt, GraphQLNonNull, GraphQLObjectType, GraphQLInputObjectType, GraphQLList } from "graphql";
+import data from "../../data/data.json";
+import _ from "lodash";
 
 export const OwnerType = new GraphQLObjectType({
     name: 'OwnerType',
@@ -48,5 +50,28 @@ export const PetUpdateType = new GraphQLInputObjectType({
         age: { type: GraphQLInt },
         breed: { type: GraphQLString },
         ownerid: { type: GraphQLInt }
+    }
+});
+
+
+export const OwnerPetType = new GraphQLObjectType({
+    name: 'OwnerPetType',
+    fields: {
+        id: { type: GraphQLString },
+        name: { type: GraphQLString },
+        colour: { type: GraphQLString },
+        age: { type: GraphQLInt },
+        breed: { type: GraphQLString },
+        address: { type: GraphQLString },
+        phone: { type: GraphQLString },
+        email: { type: GraphQLString },
+        pets: {
+            type: new GraphQLList(PetType),
+            resolve(source, args) {
+                return _.filter(data.Pets, { ownerid: source.id });
+            }
+
+        }
+
     }
 });
