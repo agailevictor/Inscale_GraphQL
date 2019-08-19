@@ -68,3 +68,64 @@ $ docker-compose down
 ![4](https://user-images.githubusercontent.com/10876540/63237939-b3347600-c276-11e9-9a1d-32d5face4df4.png)
 ![5](https://user-images.githubusercontent.com/10876540/63237982-dfe88d80-c276-11e9-91d3-626bb1d1aa8b.png)
 
+## Query / Mutations
+
+```
+query getAllOwners {
+  owners {
+    id
+    name
+    email
+    phone
+    address
+  }
+}
+
+```
+
+```
+mutation {
+  createPet(input: {name: "Archie", colour: "Black", age: 4, breed: "Rottweiler", ownerid: 5}) {
+    id
+    name
+    colour
+    age
+    breed
+    ownerid
+  }
+}
+```
+
+```
+mutation {
+  updatePet(input: {id: "1f856f95-e86a-4aaa-8255-18cc309ae33c", name: "Daisy", colour: "Brown & White", age: 1, breed: "Beagle", ownerid: 5}) {
+    id
+    name
+    colour
+    age
+    breed
+    ownerid
+  }
+}
+
+```
+
+```
+{
+  ownerpet(id: 1) {
+    id
+    name
+    phone
+    email
+    address
+    pets {
+      id
+      name
+      age
+      colour
+      breed
+    }
+  }
+}
+
+```
