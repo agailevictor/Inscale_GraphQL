@@ -42,6 +42,10 @@ Before proceeding make sure you have installed docker and docker-compose.
 $ cd %repo%
 $ docker-compose up
 ```
+![1](https://user-images.githubusercontent.com/10876540/63232644-7c516680-c25c-11e9-8593-d8a606467ed3.png)
+![2](https://user-images.githubusercontent.com/10876540/63232645-7c516680-c25c-11e9-8be0-20cac7e4f4c9.png)
+![3](https://user-images.githubusercontent.com/10876540/63232646-7c516680-c25c-11e9-9261-6f2b1b9abc86.png)
+![5](https://user-images.githubusercontent.com/10876540/63232647-7ce9fd00-c25c-11e9-9a5b-efe27066695f.png)
 
 - This will build and run the node.js container.
 - You can also use the following command to further explore the resulting configuration.
@@ -54,4 +58,4 @@ $ docker-compose down
 ```
 ## Testing API
 
-- Navigate to http://localhost:3000 in a web browser to see your newly installed application.
+- Navigate to http://localhost:3000 in a web browser to see the newly installed application.
