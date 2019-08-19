@@ -59,3 +59,12 @@ $ docker-compose down
 ## Testing API
 
 - Navigate to http://localhost:3000 in a web browser to see the newly installed application.
+
+## Screenshots
+
+![1](https://user-images.githubusercontent.com/10876540/63237936-b16ab280-c276-11e9-8a49-052e8ccb12a3.png)
+![2](https://user-images.githubusercontent.com/10876540/63237937-b2034900-c276-11e9-8054-dde481c2d8c4.png)
+![3](https://user-images.githubusercontent.com/10876540/63237938-b29bdf80-c276-11e9-9b2a-247181463507.png)
+![4](https://user-images.githubusercontent.com/10876540/63237939-b3347600-c276-11e9-9a1d-32d5face4df4.png)
+![5](https://user-images.githubusercontent.com/10876540/63237982-dfe88d80-c276-11e9-91d3-626bb1d1aa8b.png)
+
